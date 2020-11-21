@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(252, 230, 191);
+}
+.active{
+    color: gold !important;
+    background-color: #fff !important;
+}
+.active-link{
+    color: gold ;
+    background-color: #fff ;
+    padding: 10%;
+    border-radius: 4px;
+}
+nav{
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    border-bottom: 2px solid gray;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    padding: .7rem 1.5rem;
+}
+
+nav ul li a{
+    font-size: 1.2rem;
+    color: tomato;
+    text-decoration: none;
+}
+main{
+    margin-top: 120px;
+}
+main header h1{
+    text-align: center;
+}
+footer{
+    background-color: #000;
+    color: tomato;
+    text-align: center;
+    padding: 2%;
+}
+section{
+    font-size: 20px;
+}
+#Home{
+    background-color: rgb(245, 122, 100);
+    padding: 5%;
+}
+
+#About{
+    background-color: rgb(243, 247, 189);
+    padding: 5%;
+}
+
+#ContactUs{
+    background-color: rgb(224, 250, 255);
+    padding: 5%;
+   
+}
+
+#Services{
+    background-color: rgb(252, 175, 217);
+    padding: 5%;
+}
+
+.to-top {
+    background: red;
+    position: fixed;
+    bottom: 16px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #1f1f1f;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.to-top.active-top {
+    bottom: 120px;;
+    pointer-events: auto;
+    opacity:1;
+} 
